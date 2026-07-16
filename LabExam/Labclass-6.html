@@ -1,0 +1,77 @@
+<html>
+
+<head>
+     
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" style="text/css" href="style.css">
+
+    </head>
+<body>
+   
+<div class="container">
+<form id="studentForm">
+    <table>
+        <h2> Student Registration Form</h2>
+
+    <tr>
+        <td>First Name</td>
+        <td><input type="text" id="fname" placeholder="Enter your first name"><span id="fnameError" style="color:red"></span></td>
+        </tr>
+    <tr>
+         <td>Last Name</td>
+        <td><input type="text" id="lname" placeholder="Enter your last Name"><span id="lnameError" style="color:red"></span></td>
+    </tr>
+    <tr>
+        <td>Sudent ID</td>
+        <td><input type="text" id="sid" placeholder="e.g.23-12345-1"><span id="sidError" style="color:red"></span></td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td><input type="email" id="email" placeholder="example@student.aiub.edu"><span id="emailError" style="color:red"></span></td>
+    </tr>
+    <tr>
+        <td>Credit complete</td>
+        <td><input type="number" id="credit"  placeholder="Enter completed credits"><span id="creditError" style="color:red"></span></td>
+    </tr>
+    <tr>
+        <td>Department</td>
+
+        <td> <select name="" id="department">
+            <option value="">select department </option>
+            <option value="CSE">CSE</option>
+            <option value="EEE">EEE</option>
+            <option value="BBA">BBA</option>
+            <option value="CS">CS</option>
+
+        </select><span id="departmentError" style="color:red"></span>
+    </td> </tr>
+        <tr>
+            <td>
+                <div class="Button">
+            <button type="Submit"> Submit</button>
+        </div>
+            </td>
+        </tr>
+          
+         </div>      
+   
+    </table>
+     <h2>Registered Student List</h2>
+     <table id="studentTable">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Student ID</th>
+        <th>Email</th>
+        <th>Credit</th>
+        <th>Department</th>
+    </tr>
+</table>
+      
+     </form>
+    
+ <script src="script.js"></script>
+
+</body>
+
+</html>
